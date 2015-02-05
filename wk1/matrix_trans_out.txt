@@ -1,0 +1,10 @@
+naive approach: 207.08
+block size =2^1: 124.796
+block size =2^2: 66.175
+block size =2^3: 65.094
+block size =2^4: 136.666
+block size =2^5: 154.424
+block size =2^6: 153.928
+block size =2^7: 153.085
+block size =2^8: 153.464
+block size =2^9: 169.823

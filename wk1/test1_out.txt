@@ -1,0 +1,28 @@
+npasses = 2^1      time: 270.415
+npasses = 2^2      time: 260.789
+npasses = 2^3      time: 298.406
+npasses = 2^4      time: 378.296
+npasses = 2^5      time: 714.116
+npasses = 2^6      time: 1014.24
+npasses = 2^7      time: 1154.29
+npasses = 2^8      time: 1175.19
+npasses = 2^9      time: 1540.4
+npasses = 2^10      time: 1591.15
+npasses = 2^11      time: 1285.12
+npasses = 2^12      time: 993.949
+npasses = 2^13      time: 1095.03
+npasses = 2^14      time: 1094.17
+npasses = 2^15      time: 1339.61
+npasses = 2^16      time: 1348.87
+npasses = 2^17      time: 1385.14
+npasses = 2^18      time: 1463.55
+npasses = 2^19      time: 1505.18
+npasses = 2^20      time: 1109.43
+npasses = 2^21      time: 914.949
+npasses = 2^22      time: 875.186
+npasses = 2^23      time: 391.436
+npasses = 2^24      time: 246.575
+
+
+
+====== output of test1.cpp -o

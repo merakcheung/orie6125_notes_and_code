@@ -1,0 +1,43 @@
+#include<iostream>
+//#include<conio.h>
+#include<cmath>
+#include<ctime>
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+using namespace std;
+
+int f(int array[], int size, int npasses) {
+ int ans = 0;
+ for (int pass = 0; pass < npasses; ++pass)
+ for (int i = pass; i < size; i += npasses) {
+  ans += array[i]*(pass+1);
+ }
+ return ans;
+}
+
+double diffclock( clock_t clock1, clock_t clock2 ) {
+	double diffticks = clock1 - clock2;
+	double diffms    = diffticks / ( CLOCKS_PER_SEC / 1000 );
+	return diffms;
+ }
+
+#define n 1024*1024*48
+
+int main() {
+  srand(time(NULL));
+  int *arrayA = new int[n];
+
+    for (int i=0;i<n;i++){
+      arrayA[i] = rand() % 10;
+    }
+     for (int j=1; j<25;j++){
+       
+         clock_t time_s=clock();
+   	//cout<< sizeof(int);	
+        f(arrayA, n, pow(2,j)*12) ;
+	clock_t time_e=clock();
+	cout <<"npasses = 2^"<< j <<"      time: " << diffclock(time_e, time_s) <<endl; 
+     }
+  return 0;
+}
